@@ -1,0 +1,7 @@
+ID,Participant,Age,Gender,Test_Score,Group,Comments
+1,John Doe,32.0,Male,85.5,Control,First entry
+2,Jane Smith,36.0,Female,92.0,Experimental,Duplicate entry
+3,Bob Johnson,45.0,Male,78.5,Control,Needs follow-up
+2,Jane Smith,28.0,Female,92.0,Experimental,Duplicate entry
+4,Alice Brown,36.0,Male,88.0,Experimental,Missing gender
+5,Jane Smith,50.0,Male,76.5,Control,Missing name
