@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Project Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div>
+                <h1>Research Project Tracker</h1>
+                <p class="subtitle">Brilliant Researchers Africa</p>
+            </div>
+            <div class="header-actions">
+                <button id="export-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Export Data
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="dashboard">
+            <!-- Active Projects Section -->
+            <section class="card">
+                <div class="card-header">
+                    <h2>Active Projects</h2>
+                    <span class="badge">3 Ongoing</span>
+                </div>
+                <ul id="projects-list">
+                    <!-- Dynamically populated by JavaScript -->
+                </ul>
+            </section>
+
+            <!-- Data Visualization Section -->
+            <section class="card">
+                <div class="card-header">
+                    <h2>Project Status</h2>
+                    <span class="badge">Summary</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="statusChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Add New Project Form -->
+            <section class="card">
+                <div class="card-header">
+                    <h2>Add New Project</h2>
+                </div>
+                <form id="project-form">
+                    <div class="form-group">
+                        <label for="project-name">Project Name</label>
+                        <input type="text" id="project-name" placeholder="Enter project name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="project-lead">Lead Researcher</label>
+                        <input type="text" id="project-lead" placeholder="Enter researcher name">
+                    </div>
+                    <button type="submit">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                            <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                            <polyline points="7 3 7 8 15 8"></polyline>
+                        </svg>
+                        Create Project
+                    </button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

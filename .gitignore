@@ -1,0 +1,29 @@
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# VSCode files
+.vscode/
+
+# Python files
+__pycache__/
+*.pyc
+
+# Node modules
+node_modules/
+
+# Windows specific
+AppData/
+NTUSER.*
+ntuser.*
+Desktop.ini
+
+# Environment files
+.env
+.venv
+env/
+
+# Temporary files
+*.tmp
+*.temp
