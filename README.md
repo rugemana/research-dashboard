@@ -23,3 +23,8 @@
   ├── LICENSE
   ├── README.md
   └── requirements.txt
+## 💻 Usage
+
+```bash
+# Basic command
+python scripts/data_cleaner.py data/raw/your_file.csv
