@@ -1,10 +1,25 @@
-cat > README.md << 'EOF'
-# Research Dashboard
+# 🧪 Research Dashboard 
+[![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue)]()
+[![MIT License](https://img.shields.io/badge/license-MIT-green)]()
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/Rugemana/research-dashboard)]()
 
-## Project Description
-[Brief description of your project]
+*A professional data cleaning toolkit with automated scripts and Jupyter demonstrations*
 
-## Installation
-```bash
-git clone https://github.com/Rugemana/research-dashboard.git
-cd research-dashboard
+![Project Structure](https://i.imgur.com/WVqKcdN.png)
+
+## ✨ Key Features
+- **Data Cleaning Pipeline**: `scripts/data_cleaner.py`
+  - Handles missing values
+  - Standardizes formats
+  - Outputs cleaned CSV
+- **Interactive Tutorial**: `notebooks/Data_Cleaning_Demo.ipynb`
+- **Scalable Structure**:
+  ```text
+  research-dashboard/
+  ├── data/raw/          # Original datasets (e.g., sample_research_data.csv)
+  ├── notebooks/         # Jupyter notebooks
+  ├── scripts/           # Python modules
+  ├── .gitignore
+  ├── LICENSE
+  ├── README.md
+  └── requirements.txt
