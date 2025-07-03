@@ -28,3 +28,9 @@
 ```bash
 # Basic command
 python scripts/data_cleaner.py data/raw/your_file.csv
+# Research Dashboard
+![Data Comparison](assets/cleaning_comparison.png)
+
+## How to Use
+```bash
+python scripts/data_cleaner.py data/raw/your_file.csv -v
